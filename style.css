@@ -1,0 +1,99 @@
+table {
+	width: 100%;
+	border-spacing: 0;
+}
+
+p span {
+	color: #E32323;
+}
+
+h2 { font: bold italic 110% serif; }
+
+@keyframes animation{
+	from{
+		left:0;
+		opacity: 0;
+		position: absolute;
+		transform: rotate(0deg);
+	}
+	to{
+		left: 100%;
+		opacity: 1;
+		position: absolute;
+		transform: rotate(360deg);
+	}
+}
+
+.moveit {
+	width: 20%;
+	position: absolute;
+	animation-name: animation;
+	animation-iteration-count: 6;
+	animation-duration: 3s;
+	z-index: 1;
+	animation-direction: alternate;
+}
+
+.td1 {
+	background-color: #C79FF5;
+}
+
+.image1 {
+	position: relative;
+	width: 70%;
+	left: 50px;
+	z-index: 2;
+}
+
+.image2 {
+	position: relative;
+	width: 80%;
+	top: -70px;
+	left: 80px;
+	z-index: 3;
+}
+	
+table.pip {
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	width: 30%;
+	margin-top: -370px;
+	margin-left: 100px;
+	z-index: 4;
+	text-shadow:1px 1px 2px #F42747;
+}
+	
+.td2 {
+	padding: 20px;
+    background: url(../resource/kittens.jpg) no-repeat;
+	opacity: 0.9;
+	background-size: 100%;
+	background-attachment: fixed;
+    background-origin: content-box;
+}
+
+.column {
+    column-width: 100px;
+    column-count: 4;
+    column-gap: 10px;
+    column-rule: 1px solid #ccc;
+ }
+
+p:first-child {
+	color: #FFFCFB;
+	font-size: 20px;
+	font-style: normal;
+}
+
+p:nth-child(2) {
+	color: #15EAC4;
+	font-size: 22px;
+	font-style: italic; 
+}
+
+p:last-child {
+	color: #F77A21;
+	font-size: 24px;
+	font-style: oblique;
+}
